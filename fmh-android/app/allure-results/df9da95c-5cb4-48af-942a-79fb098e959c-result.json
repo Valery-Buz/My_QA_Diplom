@@ -1,0 +1,57 @@
+{
+    "name": "D_shouldShowErrorWithWrongValues",
+    "start": 1695320851348,
+    "stop": 1695320857923,
+    "stage": "finished",
+    "description": "При вводе произвольных логин пароль не входит в приложение",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "df9da95c-5cb4-48af-942a-79fb098e959c",
+    "historyId": "8f9b4fc50880f62b5313bd642df2ceb8",
+    "fullName": "ru.iteco.fmhandroid.ui.test.LoginTest.D_shouldShowErrorWithWrongValues",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.LoginTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "D_shouldShowErrorWithWrongValues"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.LoginTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(812)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Проверка страницы Авторизации"
+        }
+    ]
+}

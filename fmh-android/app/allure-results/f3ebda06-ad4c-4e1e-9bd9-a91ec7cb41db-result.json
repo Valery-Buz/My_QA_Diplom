@@ -1,0 +1,57 @@
+{
+    "name": "F_ShouldAppStartOnSplashScreenPageWhenUserLogin",
+    "start": 1695322384677,
+    "stop": 1695322385794,
+    "stage": "finished",
+    "description": "После авторизации пользователя при перезапуске отображается страница загрузки",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "f3ebda06-ad4c-4e1e-9bd9-a91ec7cb41db",
+    "historyId": "f52b1ad05a750126b2580bbdc3edce35",
+    "fullName": "ru.iteco.fmhandroid.ui.test.LoginTest.F_ShouldAppStartOnSplashScreenPageWhenUserLogin",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.LoginTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "F_ShouldAppStartOnSplashScreenPageWhenUserLogin"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.LoginTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(852)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Проверка Главной страницы"
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "name": "shouldHaveHeader",
+    "start": 1695322250094,
+    "stop": 1695322263417,
+    "stage": "finished",
+    "description": "На странице Заявки отображается хедер",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "763e2252-2313-46d7-8b22-3b9fa7dbf278",
+    "historyId": "3ebada61f6d7c1eb1784ebddd484ba63",
+    "fullName": "ru.iteco.fmhandroid.ui.test.ClaimTest.shouldHaveHeader",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.ClaimTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldHaveHeader"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.ClaimTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(852)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Проверка страницы Заявки"
+        }
+    ]
+}

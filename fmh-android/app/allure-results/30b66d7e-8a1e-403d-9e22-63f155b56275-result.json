@@ -1,0 +1,57 @@
+{
+    "name": "shouldOpenAddNewClaimPage",
+    "start": 1695322218332,
+    "stop": 1695322229085,
+    "stage": "finished",
+    "description": "При тапе по кнопке + (добавить заявку) открывается страница Создание заявки",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "30b66d7e-8a1e-403d-9e22-63f155b56275",
+    "historyId": "97d6ebd5e63839154ebfb4e16477b636",
+    "fullName": "ru.iteco.fmhandroid.ui.test.ClaimTest.shouldOpenAddNewClaimPage",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.ClaimTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldOpenAddNewClaimPage"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.ClaimTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(852)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Проверка страницы Заявки"
+        }
+    ]
+}

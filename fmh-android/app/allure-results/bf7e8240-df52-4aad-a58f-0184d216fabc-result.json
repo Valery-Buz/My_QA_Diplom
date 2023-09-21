@@ -1,0 +1,57 @@
+{
+    "name": "B_ShouldShowElementsAuthPage",
+    "start": 1695320834196,
+    "stop": 1695320841623,
+    "stage": "finished",
+    "description": "На странице Авторизации представлены необходимые элементы",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "bf7e8240-df52-4aad-a58f-0184d216fabc",
+    "historyId": "907b768991f6b4199aae22e6fa229657",
+    "fullName": "ru.iteco.fmhandroid.ui.test.LoginTest.B_ShouldShowElementsAuthPage",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.LoginTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "B_ShouldShowElementsAuthPage"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.LoginTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(812)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Проверка страницы Авторизации"
+        }
+    ]
+}

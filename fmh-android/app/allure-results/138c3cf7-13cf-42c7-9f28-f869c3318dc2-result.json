@@ -1,0 +1,57 @@
+{
+    "name": "shouldHaveAllCategoriesInDropMenu",
+    "start": 1695322288061,
+    "stop": 1695322303975,
+    "stage": "finished",
+    "description": "Раскрывающийся список Категория содержит перечень категорий",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "138c3cf7-13cf-42c7-9f28-f869c3318dc2",
+    "historyId": "6a0f6c2d4a59211e002851744966fc68",
+    "fullName": "ru.iteco.fmhandroid.ui.test.EditNewsTest.shouldHaveAllCategoriesInDropMenu",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.EditNewsTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldHaveAllCategoriesInDropMenu"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.EditNewsTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(852)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Проверка Страницы Редактирование Новости"
+        }
+    ]
+}

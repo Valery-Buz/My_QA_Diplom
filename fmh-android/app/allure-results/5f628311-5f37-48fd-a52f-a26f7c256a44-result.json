@@ -1,0 +1,57 @@
+{
+    "name": "shouldOpenClockWhenTapTimeField",
+    "start": 1695330182683,
+    "stop": 1695330194815,
+    "stage": "finished",
+    "description": "При клике по полю Время открывается окно с выбором времени",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "5f628311-5f37-48fd-a52f-a26f7c256a44",
+    "historyId": "9afebd659ddde3f197be8b788f2751ce",
+    "fullName": "ru.iteco.fmhandroid.ui.test.AddNewClaimTest.shouldOpenClockWhenTapTimeField",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.AddNewClaimTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldOpenClockWhenTapTimeField"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.AddNewClaimTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(887)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Проверка Страницы Создание заявки"
+        }
+    ]
+}

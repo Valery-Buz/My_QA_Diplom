@@ -1,0 +1,57 @@
+{
+    "name": "shouldOpenCascadePageA",
+    "start": 1695322411813,
+    "stop": 1695322453585,
+    "stage": "finished",
+    "description": "Проверка и переход между страницами из главного меню",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "83bf03bd-08b6-4daa-a281-07401bdeb7bb",
+    "historyId": "497efb40f0a434d0bbe769feaf6daf94",
+    "fullName": "ru.iteco.fmhandroid.ui.test.MainMenuTest.shouldOpenCascadePageA",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.MainMenuTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldOpenCascadePageA"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.MainMenuTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(852)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Проверка Раскрывающегося Меню"
+        }
+    ]
+}

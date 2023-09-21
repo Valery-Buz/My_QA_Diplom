@@ -1,0 +1,57 @@
+{
+    "name": "shouldOpenCalendarWhenTapDateField",
+    "start": 1695330170174,
+    "stop": 1695330182536,
+    "stage": "finished",
+    "description": "При клике по полю Дата открывается календарь",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "a36663f9-e35b-4d96-bf4e-65b9cac6961f",
+    "historyId": "cfb2304b9626e8958bc456b15d4ea565",
+    "fullName": "ru.iteco.fmhandroid.ui.test.AddNewClaimTest.shouldOpenCalendarWhenTapDateField",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.AddNewClaimTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldOpenCalendarWhenTapDateField"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.AddNewClaimTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(887)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Проверка Страницы Создание заявки"
+        }
+    ]
+}

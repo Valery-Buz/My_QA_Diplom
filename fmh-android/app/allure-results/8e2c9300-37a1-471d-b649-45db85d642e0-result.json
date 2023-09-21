@@ -1,0 +1,57 @@
+{
+    "name": "shouldShowHeaderWhenSwipeUp",
+    "start": 1695321796052,
+    "stop": 1695321809951,
+    "stage": "finished",
+    "description": "При прокрутке Главного экрана Хедер не прокручивается",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "8e2c9300-37a1-471d-b649-45db85d642e0",
+    "historyId": "e9aad1d9be7193ab12c2ab44ee3f2412",
+    "fullName": "ru.iteco.fmhandroid.ui.test.MainPageTest.shouldShowHeaderWhenSwipeUp",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.MainPageTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldShowHeaderWhenSwipeUp"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.MainPageTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(842)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Проверка Главной страницы"
+        }
+    ]
+}

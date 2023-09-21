@@ -1,0 +1,57 @@
+{
+    "name": "C_shouldShowErrorWithOneEmptyField",
+    "start": 1695322745673,
+    "stop": 1695322754263,
+    "stage": "finished",
+    "description": "При пустом поле появляется сообщение об ошибке",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "9a692bb8-c30e-47eb-866c-5fb0e73516a4",
+    "historyId": "8406acf994199e81ee8e593bb6e63674",
+    "fullName": "ru.iteco.fmhandroid.ui.test.LoginTest.C_shouldShowErrorWithOneEmptyField",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.LoginTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "C_shouldShowErrorWithOneEmptyField"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.LoginTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(862)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Проверка страницы Авторизации"
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "name": "shouldOpenPageClaimsWhenTapOnButtonAllClaims",
+    "start": 1695322510103,
+    "stop": 1695322518939,
+    "stage": "finished",
+    "description": "При тапе по кнопке ВСЕ ЗАЯВКИ открывается страница Заявки",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "6ea67c9b-8a77-4a98-81f2-718154cdfb3d",
+    "historyId": "4582ab6ff64a0854fede0e46d4689b48",
+    "fullName": "ru.iteco.fmhandroid.ui.test.MainPageTest.shouldOpenPageClaimsWhenTapOnButtonAllClaims",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.MainPageTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldOpenPageClaimsWhenTapOnButtonAllClaims"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.MainPageTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(852)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Проверка Главной страницы"
+        }
+    ]
+}

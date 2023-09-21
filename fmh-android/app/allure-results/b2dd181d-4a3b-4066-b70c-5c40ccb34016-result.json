@@ -1,0 +1,57 @@
+{
+    "name": "shouldShowErrorWithEmptyFields",
+    "start": 1695322107342,
+    "stop": 1695322119115,
+    "stage": "finished",
+    "description": "При сохранении Заявки с незаполненным полем появляется сообщение Заполните пустые поля",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "b2dd181d-4a3b-4066-b70c-5c40ccb34016",
+    "historyId": "f56ea7f554ee9f373dc159004cf3efe",
+    "fullName": "ru.iteco.fmhandroid.ui.test.AddNewClaimTest.shouldShowErrorWithEmptyFields",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.AddNewClaimTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldShowErrorWithEmptyFields"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.AddNewClaimTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(852)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Проверка Страницы Создание заявки"
+        }
+    ]
+}

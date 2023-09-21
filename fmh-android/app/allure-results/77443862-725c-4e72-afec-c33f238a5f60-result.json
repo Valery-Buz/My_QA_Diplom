@@ -1,0 +1,57 @@
+{
+    "name": "A_ShouldBeVisibleAllElementsLogin",
+    "start": 1695322730658,
+    "stop": 1695322738138,
+    "stage": "finished",
+    "description": "На странице Авторизации представлены необходимые элементы",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "77443862-725c-4e72-afec-c33f238a5f60",
+    "historyId": "ceb2e3b6899017cec53542d40cc4a56b",
+    "fullName": "ru.iteco.fmhandroid.ui.test.LoginTest.A_ShouldBeVisibleAllElementsLogin",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.LoginTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "A_ShouldBeVisibleAllElementsLogin"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.LoginTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(862)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Проверка Стартовой Страницы"
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "name": "cardClaimShouldHaveRequiredFields",
+    "start": 1695322204595,
+    "stop": 1695322218281,
+    "stage": "finished",
+    "description": "Открыть заявку без комментария",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "eb37c016-baf7-44cb-b0f4-3eb49357f983",
+    "historyId": "4295adc2f49f8f3f54b0e3ce168eaf6d",
+    "fullName": "ru.iteco.fmhandroid.ui.test.ClaimTest.cardClaimShouldHaveRequiredFields",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.ClaimTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "cardClaimShouldHaveRequiredFields"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.ClaimTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(852)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Страница информации о заявке"
+        }
+    ]
+}

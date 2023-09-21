@@ -1,0 +1,57 @@
+{
+    "name": "shouldOpenFilterPage",
+    "start": 1695322631897,
+    "stop": 1695322643016,
+    "stage": "finished",
+    "description": "При тапе по кнопке Фильтр открывается модальное окно фильтра",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "c9a50add-4b9e-4a56-bd8f-3a2a5dfaa30c",
+    "historyId": "12057ce782e0049c9de194caba236443",
+    "fullName": "ru.iteco.fmhandroid.ui.test.NewsTest.shouldOpenFilterPage",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.NewsTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldOpenFilterPage"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.NewsTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(852)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Проверка Страницы Новости"
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "name": "shouldHaveRequiredElements",
+    "start": 1695322229162,
+    "stop": 1695322239201,
+    "stage": "finished",
+    "description": "Проверка страницы Заявки",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "569de595-abba-4a0b-84b6-f3a718fde558",
+    "historyId": "fbff4267eb1266cacc4c21ea1dc00589",
+    "fullName": "ru.iteco.fmhandroid.ui.test.ClaimTest.shouldHaveRequiredElements",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.ClaimTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldHaveRequiredElements"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.ClaimTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(852)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Проверка страницы Заявки"
+        }
+    ]
+}

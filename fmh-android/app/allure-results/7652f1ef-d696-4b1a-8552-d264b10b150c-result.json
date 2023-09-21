@@ -1,0 +1,57 @@
+{
+    "name": "shouldOpenAddNewNewsPAgeWhenTapOnButton",
+    "start": 1695322560602,
+    "stop": 1695322572851,
+    "stage": "finished",
+    "description": "При тапе по кнопке Добавить (+) открывается старница Создание новости",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "7652f1ef-d696-4b1a-8552-d264b10b150c",
+    "historyId": "c016c396211bb1091ef2766ef8ed3e40",
+    "fullName": "ru.iteco.fmhandroid.ui.test.NewsControlTest.shouldOpenAddNewNewsPAgeWhenTapOnButton",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.NewsControlTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldOpenAddNewNewsPAgeWhenTapOnButton"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.NewsControlTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(852)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Проверка Страницы Панель Управления"
+        }
+    ]
+}

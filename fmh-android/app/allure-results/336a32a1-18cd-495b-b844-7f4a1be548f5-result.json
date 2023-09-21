@@ -1,0 +1,57 @@
+{
+    "name": "G_ShouldAppStartOnMainPageWhenUserLogin",
+    "start": 1695322769423,
+    "stop": 1695322776014,
+    "stage": "finished",
+    "description": "После авторизации пользователя при перезапуске открывается Главная страница",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "336a32a1-18cd-495b-b844-7f4a1be548f5",
+    "historyId": "278841ee0a9df8af104f1870234e7807",
+    "fullName": "ru.iteco.fmhandroid.ui.test.LoginTest.G_ShouldAppStartOnMainPageWhenUserLogin",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.LoginTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "G_ShouldAppStartOnMainPageWhenUserLogin"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.LoginTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(862)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Проверка Главной страницы"
+        }
+    ]
+}

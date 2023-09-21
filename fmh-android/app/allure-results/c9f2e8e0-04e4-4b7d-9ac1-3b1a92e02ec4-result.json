@@ -1,0 +1,57 @@
+{
+    "name": "shouldHaveCategories",
+    "start": 1695322547006,
+    "stop": 1695322560555,
+    "stage": "finished",
+    "description": "При тапе по селектору Категория раскрывается выпадающий список с категориями",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "c9f2e8e0-04e4-4b7d-9ac1-3b1a92e02ec4",
+    "historyId": "3f470fe05a934e0f70d864e2ba31a836",
+    "fullName": "ru.iteco.fmhandroid.ui.test.NewsControlTest.shouldHaveCategories",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.NewsControlTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldHaveCategories"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.NewsControlTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(852)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Проверка Страницы Панель Управления"
+        }
+    ]
+}

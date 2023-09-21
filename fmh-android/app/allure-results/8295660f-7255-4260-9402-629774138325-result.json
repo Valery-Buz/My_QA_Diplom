@@ -1,0 +1,57 @@
+{
+    "name": "shouldHaveHeader",
+    "start": 1695322653602,
+    "stop": 1695322665806,
+    "stage": "finished",
+    "description": "При скролле вверх новости прокручиваются, хедер закреплен",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "8295660f-7255-4260-9402-629774138325",
+    "historyId": "6bb9a2dac9b29c2828559920ea94b55f",
+    "fullName": "ru.iteco.fmhandroid.ui.test.NewsTest.shouldHaveHeader",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.NewsTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldHaveHeader"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.NewsTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(852)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Проверка Страницы Новости"
+        }
+    ]
+}

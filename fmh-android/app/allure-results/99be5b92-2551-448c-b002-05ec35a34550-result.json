@@ -1,0 +1,57 @@
+{
+    "name": "menuShouldHaveRequiredElements",
+    "start": 1695322402934,
+    "stop": 1695322411763,
+    "stage": "finished",
+    "description": "Проверка раскрывающегося меню навигация",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "99be5b92-2551-448c-b002-05ec35a34550",
+    "historyId": "63b1ed26fc18e3af32359e2e7b8fa3c5",
+    "fullName": "ru.iteco.fmhandroid.ui.test.MainMenuTest.menuShouldHaveRequiredElements",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.MainMenuTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "menuShouldHaveRequiredElements"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.MainMenuTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(852)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Проверка Раскрывающегося Меню"
+        }
+    ]
+}

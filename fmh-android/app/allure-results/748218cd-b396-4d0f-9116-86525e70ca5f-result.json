@@ -1,0 +1,57 @@
+{
+    "name": "H_ShouldAppStartOnAuthPageWhenUserLogOut",
+    "start": 1695320873180,
+    "stop": 1695320879511,
+    "stage": "finished",
+    "description": "После выхода пользователя при перезапуске открывается страница Авторизации",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "748218cd-b396-4d0f-9116-86525e70ca5f",
+    "historyId": "861065234e7b5f7d0ab6a32032903c59",
+    "fullName": "ru.iteco.fmhandroid.ui.test.LoginTest.H_ShouldAppStartOnAuthPageWhenUserLogOut",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.LoginTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "H_ShouldAppStartOnAuthPageWhenUserLogOut"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.LoginTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(812)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Проверка Главной страницы"
+        }
+    ]
+}

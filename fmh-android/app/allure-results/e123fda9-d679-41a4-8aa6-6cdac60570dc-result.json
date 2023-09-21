@@ -1,0 +1,57 @@
+{
+    "name": "E_ShouldLogin",
+    "start": 1695320858045,
+    "stop": 1695320865077,
+    "stage": "finished",
+    "description": "При вводе валидных логин пароль входит в приложение",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "e123fda9-d679-41a4-8aa6-6cdac60570dc",
+    "historyId": "56fd998e5c1fa5410f1af86dfda0a6e2",
+    "fullName": "ru.iteco.fmhandroid.ui.test.LoginTest.E_ShouldLogin",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.LoginTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "E_ShouldLogin"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.LoginTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(812)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Проверка страницы Авторизации"
+        }
+    ]
+}

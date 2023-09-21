@@ -1,0 +1,57 @@
+{
+    "name": "shouldHaveRequiredElements",
+    "start": 1695322682194,
+    "stop": 1695322700443,
+    "stage": "finished",
+    "description": "проверка работы выпадающего меню на странице Тематические Цитаты",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "ac73494e-0017-4cae-beb1-5c6a1d409280",
+    "historyId": "e40bf34bc7ecb81a898440424e9ed3fd",
+    "fullName": "ru.iteco.fmhandroid.ui.test.QuotesTest.shouldHaveRequiredElements",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.QuotesTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldHaveRequiredElements"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.QuotesTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(852)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Проверка Страницы Тематические Цитаты"
+        }
+    ]
+}

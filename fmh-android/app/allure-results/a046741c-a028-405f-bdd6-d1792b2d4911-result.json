@@ -1,0 +1,57 @@
+{
+    "name": "shouldShowDescriptionFieldWhenTapNews",
+    "start": 1695322474025,
+    "stop": 1695322483552,
+    "stage": "finished",
+    "description": "На Главной странице отображается описание",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "a046741c-a028-405f-bdd6-d1792b2d4911",
+    "historyId": "330912ea3c918d2b9fa09c8a62ecb3f6",
+    "fullName": "ru.iteco.fmhandroid.ui.test.MainPageTest.shouldShowDescriptionFieldWhenTapNews",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.MainPageTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldShowDescriptionFieldWhenTapNews"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.MainPageTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(852)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Проверка Главной страницы"
+        }
+    ]
+}

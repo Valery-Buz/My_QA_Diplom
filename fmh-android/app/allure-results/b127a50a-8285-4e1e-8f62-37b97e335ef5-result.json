@@ -1,0 +1,57 @@
+{
+    "name": "shouldShowErrorWithEmptyFields",
+    "start": 1695321236841,
+    "stop": 1695321256654,
+    "stage": "finished",
+    "description": "При сохранении Новости c незаполненным полем появляется сообщение \"Заполните пустые поля\"",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "b127a50a-8285-4e1e-8f62-37b97e335ef5",
+    "historyId": "6035fba7fa17fb3597584884e4f3191c",
+    "fullName": "ru.iteco.fmhandroid.ui.test.EditNewsTest.shouldShowErrorWithEmptyFields",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.EditNewsTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldShowErrorWithEmptyFields"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.EditNewsTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(822)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Проверка Страницы Редактирование Новости"
+        }
+    ]
+}

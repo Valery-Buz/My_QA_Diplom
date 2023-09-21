@@ -1,0 +1,57 @@
+{
+    "name": "I_ShouldStartAppOnMainPageWhenAuthorized",
+    "start": 1695320879647,
+    "stop": 1695320885503,
+    "stage": "finished",
+    "description": "запуск авторизованным пользователем при перезапуске приложения авторизванным пользователем",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "d32b5430-7b0c-4871-8268-59c302df8ddf",
+    "historyId": "c2996c6c691deb96b340c1bcaec89107",
+    "fullName": "ru.iteco.fmhandroid.ui.test.LoginTest.I_ShouldStartAppOnMainPageWhenAuthorized",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.LoginTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "I_ShouldStartAppOnMainPageWhenAuthorized"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.LoginTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(812)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Проверка Главной страницы"
+        }
+    ]
+}

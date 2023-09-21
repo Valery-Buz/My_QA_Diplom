@@ -115,6 +115,7 @@
                         android:focusableInTouchMode="false" />
                 </com.google.android.material.textfield.TextInputLayout>
 
+                <!-- блок выбора видимости скрыт до реализации данного функционала -->
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/description_text_input_layout"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -135,7 +136,6 @@
                         android:inputType="textMultiLine" />
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <!-- блок выбора видимости скрыт до реализации данного функционала -->
                 <LinearLayout
                     android:id="@+id/visibility"
                     android:layout_width="fill_parent"

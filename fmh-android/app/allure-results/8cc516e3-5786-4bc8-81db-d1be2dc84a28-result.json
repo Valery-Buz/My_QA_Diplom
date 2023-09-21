@@ -1,0 +1,57 @@
+{
+    "name": "shouldOpenFilterPage",
+    "start": 1695322572878,
+    "stop": 1695322585343,
+    "stage": "finished",
+    "description": "При тапе по кнопке Фильтр открывается модальное окно фильтра",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "8cc516e3-5786-4bc8-81db-d1be2dc84a28",
+    "historyId": "6b614a08094fe48ecf1fb205de9d126b",
+    "fullName": "ru.iteco.fmhandroid.ui.test.NewsControlTest.shouldOpenFilterPage",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.NewsControlTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldOpenFilterPage"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.NewsControlTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(852)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Проверка Страницы Панель Управления"
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "name": "shouldOpenPopupFilter",
+    "start": 1695322239244,
+    "stop": 1695322250037,
+    "stage": "finished",
+    "description": "При тапе по кнопке фильтра открывается попап меню Фильтрация",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "0011c2a8-bc21-45bc-9f90-4ec18e067a3c",
+    "historyId": "3e0da3901b1bf99362979f0515f03f2b",
+    "fullName": "ru.iteco.fmhandroid.ui.test.ClaimTest.shouldOpenPopupFilter",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.ClaimTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldOpenPopupFilter"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.ClaimTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(852)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Проверка страницы Заявки"
+        }
+    ]
+}

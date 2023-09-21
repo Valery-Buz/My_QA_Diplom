@@ -1,0 +1,57 @@
+{
+    "name": "shouldHaveRequiredUIElements",
+    "start": 1695322700476,
+    "stop": 1695322701594,
+    "stage": "finished",
+    "description": "На Стартовой странице представлены необходимые элементы",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "1447a469-9700-4e53-954a-5584703f82fb",
+    "historyId": "756a630a3837701eb2118f410f3268c8",
+    "fullName": "ru.iteco.fmhandroid.ui.test.SplashScreenTest.shouldHaveRequiredUIElements",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.SplashScreenTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldHaveRequiredUIElements"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.SplashScreenTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(852)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Проверка Стартовой Страницы"
+        }
+    ]
+}

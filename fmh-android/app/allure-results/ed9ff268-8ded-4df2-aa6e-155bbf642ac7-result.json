@@ -1,0 +1,57 @@
+{
+    "name": "shouldDisplayNewsFieldsForControlPanel",
+    "start": 1695322534776,
+    "stop": 1695322546964,
+    "stage": "finished",
+    "description": "На странице Панель управления есть все элементы",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "ed9ff268-8ded-4df2-aa6e-155bbf642ac7",
+    "historyId": "238ee16ecd86be906241c0ab26f0f7b",
+    "fullName": "ru.iteco.fmhandroid.ui.test.NewsControlTest.shouldDisplayNewsFieldsForControlPanel",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.NewsControlTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldDisplayNewsFieldsForControlPanel"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.NewsControlTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(852)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Проверка Страницы Панель Управления"
+        }
+    ]
+}

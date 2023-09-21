@@ -1,0 +1,57 @@
+{
+    "name": "shouldOpenClockWhenTapTimeField",
+    "start": 1695322304015,
+    "stop": 1695322316512,
+    "stage": "finished",
+    "description": "При тапе по полю Время открываются часы",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "320e0095-6aeb-4bc2-ae07-564c891662c7",
+    "historyId": "8de62b1b9df79f28fdbd379cc22997ab",
+    "fullName": "ru.iteco.fmhandroid.ui.test.EditNewsTest.shouldOpenClockWhenTapTimeField",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.test"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.test.EditNewsTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldOpenClockWhenTapTimeField"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.test.EditNewsTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(852)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        },
+        {
+            "name": "story",
+            "value": "Проверка Страницы Редактирование Новости"
+        }
+    ]
+}
