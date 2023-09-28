@@ -11,8 +11,10 @@ import static org.hamcrest.CoreMatchers.not;
 
 import androidx.test.espresso.ViewInteraction;
 
+import io.qameta.allure.kotlin.Allure;
 import io.qameta.allure.kotlin.Step;
 import ru.iteco.fmhandroid.R;
+import ru.iteco.fmhandroid.ui.data.BasePage;
 
 public class NewsCard extends BasePage {
     public static ViewInteraction newsCategoryImage = onView(withIndex(withId(R.id.category_icon_image_view), 0));
@@ -21,33 +23,33 @@ public class NewsCard extends BasePage {
     public static ViewInteraction newsDescription = onView(withIndex(withId(R.id.news_item_description_text_view), 0)); //view only on expand news
 
 
-    @Step("Проверка наличия кнопки Удаление новости")
     public static void deleteButtonCheck() {
+        Allure.step("Проверка наличия кнопки Удаление новости");
         onView(withIndex(withId(R.id.delete_news_item_image_view), 0)).check(matches(isDisplayed()));
         onView(withIndex(withId(R.id.delete_news_item_image_view), 0)).check(matches(isClickable()));
     }
 
-    @Step("Проверка наличия кнопки Редактировать новость")
     public static void editButtonCheck() {
+        Allure.step("Проверка наличия кнопки Редактировать новость");
         onView(withIndex(withId(R.id.edit_news_item_image_view), 0)).check(matches(isDisplayed()));
         onView(withIndex(withId(R.id.edit_news_item_image_view), 0)).check(matches(isClickable()));
     }
 
-    @Step("Проверка наличия кнопки Изменение статуса")
     public static void statusButtonCheck() {
+        Allure.step("Проверка наличия кнопки Изменение статуса");
         onView(withIndex(withId(R.id.view_news_item_image_view), 0)).check(matches(isDisplayed()));
     }
 
-    @Step("Проверка содержимого карточки новости (свернутой)")
     public static void newsCardFullShortCheck() {
+        Allure.step("Проверка содержимого карточки новости (свернутой)");
         newsTitle.check(matches(isDisplayed()));
         newsCategoryImage.check(matches(isDisplayed()));
         newsDate.check(matches(isDisplayed()));
         newsDescription.check(matches(not(isDisplayed())));
     }
 
-    @Step("Проверка содержимого карточки новости")
     public static void newsCardFullCheck() {
+        Allure.step("Проверка содержимого карточки новости");
         onView(withIndex(withId(R.id.category_icon_image_view), 0)).check(matches(isDisplayed()));
         onView(withIndex(withId(R.id.news_item_title_text_view), 0)).check(matches(isDisplayed()));
         onView(withIndex(withId(R.id.news_item_publication_text_view), 0)).check(matches(isDisplayed()));
@@ -64,8 +66,8 @@ public class NewsCard extends BasePage {
         onView(withIndex(withId(R.id.news_item_author_text_view), 0)).check(matches(withText("Автор")));
     }
 
-    @Step("Проверка содержимого карточки новости (свернутой)")
     public static void newsCardFullDescriptionsCheck() {
+        Allure.step("Проверка содержимого карточки новости (свернутой)");
         onView(withIndex(withId(R.id.news_item_title_text_view), 0)).perform(click());
         onView(withIndex(withId(R.id.news_item_description_text_view), 0)).check(matches(isDisplayed()));
     }

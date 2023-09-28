@@ -9,19 +9,23 @@ import static org.hamcrest.Matchers.allOf;
 
 import androidx.test.espresso.ViewInteraction;
 
+import io.qameta.allure.kotlin.Allure;
 import io.qameta.allure.kotlin.Step;
+import ru.iteco.fmhandroid.ui.data.BasePage;
 
-public class LkMenu extends BasePage{
+public class LkMenu extends BasePage {
     private static final ViewInteraction logoutButton = onView(
             allOf(withId(android.R.id.title), withText("Выйти"),
                     isDisplayed()));
 
-    @Step("Кнопка видна и кликабельна, текст соответстует")
+
     public static void logoutButtonCheck(){
+        Allure.step("Кнопка видна и кликабельна, текст соответстует");
         existNotClickableText(logoutButton, "Выйти");
     }
-    @Step("Тап по кнопке Выйти")
+
     public static void logoutButtonClick(){
+        Allure.step("Тап по кнопке Выйти");
         waitUntilElement("Выйти");
         logoutButton.perform(click());
     }

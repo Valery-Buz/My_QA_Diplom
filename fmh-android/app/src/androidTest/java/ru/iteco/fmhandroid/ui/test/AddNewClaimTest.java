@@ -6,11 +6,14 @@ import org.junit.Test;
 
 import io.qameta.allure.kotlin.Description;
 import io.qameta.allure.kotlin.Story;
-import ru.iteco.fmhandroid.ui.BeforeRunTest;
+import ru.iteco.fmhandroid.ui.data.BeforeRunTest;
 import ru.iteco.fmhandroid.ui.steps.AddNewClaim;
 import ru.iteco.fmhandroid.ui.steps.AddNewNews;
 import ru.iteco.fmhandroid.ui.steps.Claim;
+import ru.iteco.fmhandroid.ui.steps.ClaimCard;
 import ru.iteco.fmhandroid.ui.steps.HeaderPage;
+import ru.iteco.fmhandroid.ui.steps.LkMenu;
+import ru.iteco.fmhandroid.ui.steps.Login;
 import ru.iteco.fmhandroid.ui.steps.MainMenu;
 import ru.iteco.fmhandroid.ui.steps.MainPage;
 
@@ -47,6 +50,7 @@ public class AddNewClaimTest extends BeforeRunTest {
         AddNewClaim.descriptionFieldType("Test Claim");
         AddNewClaim.descriptionFieldHide();
         AddNewClaim.saveButtonClick();
+        Claim.titleClaimHeaderCheck();
     }
 
     @Description("Появляется модальное окно с информацией о несохраненных действиях и кнопками Отмена и ОК")

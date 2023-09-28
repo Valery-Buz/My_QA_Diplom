@@ -12,8 +12,10 @@ import static androidx.test.espresso.matcher.ViewMatchers.withText;
 
 import androidx.test.espresso.ViewInteraction;
 
+import io.qameta.allure.kotlin.Allure;
 import io.qameta.allure.kotlin.Step;
 import ru.iteco.fmhandroid.R;
+import ru.iteco.fmhandroid.ui.data.BasePage;
 
 public class AddNewClaim extends BasePage {
     private static final ViewInteraction titleHeader = onView(withId(R.id.custom_app_bar_title_text_view));
@@ -34,83 +36,84 @@ public class AddNewClaim extends BasePage {
     private static final ViewInteraction emptyFieldMessage = onView(withText("Заполните пустые поля"));
     private static final ViewInteraction emptyFieldOkButton = onView(withId(android.R.id.button1));
 
-    @Step("Проверка наличия заголовка Создание страницы")
+
     public static void titleHeaderCheck() {
+        Allure.step("Проверка наличия заголовка Создание страницы");
         waitUntilElement(R.id.custom_app_bar_title_text_view);
         titleHeader.check(matches(isDisplayed()));
     }
 
-    @Step("Кликнуть по кнопке Отмена создания заявки")
     public static void cancelButtonClick() {
+        Allure.step("Кликнуть по кнопке Отмена создания заявки");
         waitUntilElement(R.id.cancel_button);
         cancelButton.perform(click());
     }
 
-    @Step("Кликнуть по кнопке Отмена окна сообщения")
     public static void noSaveChangesCancelButtonClick() {
+        Allure.step("Кликнуть по кнопке Отмена окна сообщения");
         waitUntilElement("Отмена");
         noSaveChangesCancelButton.perform(click());
     }
 
-    @Step("Кликнуть по кнопке OK")
     public static void calendarOkButtonClick() {
+        Allure.step("Кликнуть по кнопке OK");
         calendarOkButton.perform(click());
     }
 
-    @Step("Кликнуть по кнопке OK")
     public static void timeFieldClick() {
+        Allure.step("Кликнуть по кнопке OK");
         timeField.perform(click());
     }
 
-    @Step("Кликнуть по кнопке")
     public static void timeOKButtonClick() {
+        Allure.step("Кликнуть по кнопке");
         timeOKButton.perform(click());
     }
 
-    @Step("Кликнуть по кнопке OK")
     public static void dateFieldClick() {
+        Allure.step("Кликнуть по кнопке OK");
         dateField.perform(click());
     }
 
-    @Step("Кликнуть по кнопке Сохранить")
     public static void saveButtonClick() {
+        Allure.step("Кликнуть по кнопке Сохранить");
         saveButton.perform(click());
     }
 
-    @Step("Кликнуть по кнопке Сохранить")
     public static void emptyFieldOkButtonClick() {
+        Allure.step("Кликнуть по кнопке Сохранить");
         emptyFieldOkButton.perform(click());
     }
 
-    @Step("Кликнуть по кнопке OK окна сообщения")
     public static void noSaveChangesOkButtonClick() {
+        Allure.step("Кликнуть по кнопке OK окна сообщения");
         noSaveChangesOkButton.perform(click());
     }
 
-    @Step("Кликнуть по полю и скрыть клавиатуру")
     public static void descriptionFieldHide() {
+        Allure.step("Кликнуть по полю и скрыть клавиатуру");
         descriptionField.perform(closeSoftKeyboard());
         waitUntilKeyboardHide();
     }
 
-    @Step("Кликнуть по полю и скрыть клавиатуру")
     public static void titleFieldClickAndHide() {
+        Allure.step("Кликнуть по полю и скрыть клавиатуру");
         titleField.perform(click());
         titleField.perform(closeSoftKeyboard());
     }
 
-    @Step("Ввести в поле значение")
     public static void titleFieldType(String text) {
+        Allure.step("Ввести в поле значение");
         typeT(titleField, text);
     }
 
-    @Step("Ввести в поле значение")
     public static void descriptionFieldType(String text) {
+        Allure.step("Ввести в поле значение");
         typeT(descriptionField, text);
     }
 
-    @Step("Проверка наличия всех элементов на странице")
     public static void elementsCheckAll() {
+        Allure.step("Проверка наличия всех элементов на странице");
         titleHeader.check(matches(isDisplayed()));
         subTitleHeader.check(matches(isDisplayed()));
         titleField.check(matches(isDisplayed()));
@@ -135,8 +138,8 @@ public class AddNewClaim extends BasePage {
         descriptionField.check(matches(withHint("Описание")));
     }
 
-    @Step("Проверка сообщения об ошибке в виде всплывающего окна")
     public static void emptyFieldMessageCheck() {
+        Allure.step("Проверка сообщения об ошибке в виде всплывающего окна");
         waitUntilElement("Заполните пустые поля");
         emptyFieldMessage.check(matches(isDisplayed()));
         emptyFieldOkButton.check(matches(isDisplayed()));
@@ -145,8 +148,8 @@ public class AddNewClaim extends BasePage {
         emptyFieldOkButton.check(matches(isClickable()));
     }
 
-    @Step("Проверка сообщения о несохраненных изменениях на странице")
     public static void noChangesMessageCheck() {
+        Allure.step("Проверка сообщения о несохраненных изменениях на странице");
         waitUntilElement("Изменения не будут сохранены. Вы действительно хотите выйти?");
         noSaveChangesMessage.check(matches(isDisplayed()));
         noSaveChangesMessage.check(matches(withText("Изменения не будут сохранены. Вы действительно хотите выйти?")));

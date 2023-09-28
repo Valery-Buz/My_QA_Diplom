@@ -9,8 +9,10 @@ import static androidx.test.espresso.matcher.ViewMatchers.withText;
 
 import androidx.test.espresso.ViewInteraction;
 
+import io.qameta.allure.kotlin.Allure;
 import io.qameta.allure.kotlin.Step;
 import ru.iteco.fmhandroid.R;
+import ru.iteco.fmhandroid.ui.data.BeforeRunTest;
 
 public class NewsControl extends News {
     private static final ViewInteraction filterActiveSwitch = onView(withId(R.id.filter_news_active_material_check_box));
@@ -18,32 +20,32 @@ public class NewsControl extends News {
     private static final ViewInteraction controlPanelTitle = onView(withText("Панель \n управления"));
 
 
-    @Step("Кнопка отображается и кликабелен")
     public static void filterActiveSwitchCheck() {
+        Allure.step("Кнопка отображается и кликабельна");
         existClickable(filterActiveSwitch);
     }
 
-    @Step("Переключатель отображается и кликабелен")
     public static void filterInactiveSwitchCheck() {
+        Allure.step("Переключатель отображается и кликабелен");
         existClickable(filterInactiveSwitch);
     }
 
-    @Step("Кнопка отображается и кликабелен")
     public static void filterActiveChecked() {
+        Allure.step("Кнопка отображается и кликабельна");
         filterActiveSwitch.check(matches(isChecked()));
     }
 
-    @Step("Переключатель отображается и кликабелен")
     public static void filterInactiveSwitchChecked() {
+        Allure.step("Переключатель отображается и кликабелен");
         filterInactiveSwitch.check(matches(isChecked()));
     }
 
-    @Step("Тап по кнопке edit")
     public static void editButtonClick() {
+        Allure.step("Тап по кнопке edit");
         onView(withIndex(withId(R.id.edit_news_item_image_view), 0)).perform(click());
     }
-    @Step("Отображается заголовок Панель Управления")
     public static void controlPanelTitleCheck(){
+        Allure.step("Отображается заголовок Панель Управления");
         waitUntilElement("Панель \n управления");
         existText(controlPanelTitle, "Панель \n управления");
     }

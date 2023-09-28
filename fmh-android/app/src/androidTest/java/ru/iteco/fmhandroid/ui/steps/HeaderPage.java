@@ -1,13 +1,17 @@
 package ru.iteco.fmhandroid.ui.steps;
 
+
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 
 import androidx.test.espresso.ViewInteraction;
 
+import io.qameta.allure.kotlin.Allure;
 import io.qameta.allure.kotlin.Step;
 import ru.iteco.fmhandroid.R;
+import ru.iteco.fmhandroid.ui.data.BasePage;
+
 
 public class HeaderPage extends BasePage {
     private static final ViewInteraction mainMenuButton = onView(withId(R.id.main_menu_image_button));
@@ -15,37 +19,44 @@ public class HeaderPage extends BasePage {
     private static final ViewInteraction thematicButton = onView(withId(R.id.our_mission_image_button));
     private static final ViewInteraction lkButton = onView(withId(R.id.authorization_image_button));
 
-    @Step("Кнопка Главное меню видна и кликабельна")
+
     public static void mainMenuButtonCheck(){
+        Allure.step("Кнопка Главное меню видна и кликабельна");
         waitUntilElement(R.id.main_menu_image_button);
         existClickable(mainMenuButton);
     }
-    @Step("Кнопка Цитаты видна и кликабельна")
+
     public static void thematicButtonCheck(){
+        Allure.step("Кнопка Цитаты видна и кликабельна");
         existClickable(thematicButton);
     }
-    @Step("Кнопка Личный кабинет видна и кликабельна")
+
     public static void lkButtonCheck(){
+        Allure.step("Кнопка Личный кабинет видна и кликабельна");
         existClickable(lkButton);
     }
-    @Step("Лого присутствует и не кликабелен")
+
     public static void logoCheck(){
+        Allure.step("Лого присутствует и не кликабелен");
         waitUntilElement(R.id.trademark_image_view);
         existNotClickable(logoView);
     }
 
-    @Step("Тап по кнопке")
+
     public static void mainMenuButtonClick(){
+        Allure.step("Тап по кнопке Главное меню");
         waitUntilElement(R.id.main_menu_image_button);
         mainMenuButton.perform(click());
     }
-    @Step("Тап по кнопке")
+
     public static void thematicButtonClick(){
+        Allure.step("Тап по кнопке Цитаты");
         waitUntilElement(R.id.our_mission_image_button);
         thematicButton.perform(click());
     }
-    @Step("Тап по кнопке")
+
     public static void lkButtonClick(){
+        Allure.step("Тап по кнопке ЛК");
         waitUntilElement(R.id.authorization_image_button);
         lkButton.perform(click());
     }

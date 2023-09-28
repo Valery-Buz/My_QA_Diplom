@@ -1,4 +1,4 @@
-package ru.iteco.fmhandroid.ui;
+package ru.iteco.fmhandroid.ui.data;
 
 import androidx.test.espresso.NoMatchingViewException;
 import androidx.test.espresso.PerformException;
@@ -8,7 +8,6 @@ import org.junit.Before;
 import org.junit.runner.RunWith;
 
 import io.qameta.allure.android.runners.AllureAndroidJUnit4;
-import ru.iteco.fmhandroid.ui.steps.BasePage;
 import ru.iteco.fmhandroid.ui.steps.HeaderPage;
 import ru.iteco.fmhandroid.ui.steps.LkMenu;
 import ru.iteco.fmhandroid.ui.steps.Login;

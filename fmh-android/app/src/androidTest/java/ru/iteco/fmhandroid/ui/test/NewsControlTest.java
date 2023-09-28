@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import io.qameta.allure.kotlin.Description;
 import io.qameta.allure.kotlin.Story;
-import ru.iteco.fmhandroid.ui.BeforeRunTest;
+import ru.iteco.fmhandroid.ui.data.BeforeRunTest;
 import ru.iteco.fmhandroid.ui.steps.AddNewNews;
 import ru.iteco.fmhandroid.ui.steps.HeaderPage;
 import ru.iteco.fmhandroid.ui.steps.MainMenu;
@@ -30,7 +30,7 @@ public class NewsControlTest extends BeforeRunTest {
         NewsCard.editButtonCheck();
         NewsCard.deleteButtonCheck();
         NewsCard.statusButtonCheck();
-        NewsCard.newsCardFullDescriptionsCheck();
+        NewsControl.controlPanelTitleCheck();
     }
 
     @Description("При тапе по кнопке Фильтр открывается модальное окно фильтра")

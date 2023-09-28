@@ -5,14 +5,24 @@ import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
+import static androidx.test.espresso.matcher.ViewMatchers.withParent;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
+
+import static org.hamcrest.Matchers.allOf;
+import static ru.iteco.fmhandroid.ui.steps.Claim.titleClaimHeaderCheck;
+
+import android.view.View;
 
 import androidx.test.espresso.ViewInteraction;
 
+import org.hamcrest.core.IsInstanceOf;
+
+import io.qameta.allure.kotlin.Allure;
 import io.qameta.allure.kotlin.Step;
 import ru.iteco.fmhandroid.R;
+import ru.iteco.fmhandroid.ui.data.BasePage;
 
-public class ClaimCard extends BasePage{
+public class ClaimCard extends BasePage {
     private static final ViewInteraction claimThemeTitle = onView(withIndex(withId(R.id.title_material_text_view), 0));
     private static final ViewInteraction claimThemeDescription = onView(withIndex(withId(R.id.description_material_text_view), 0));
     private static final ViewInteraction claimExecutorTitle = onView(withIndex(withId(R.id.executor_name_label_material_text_view), 0));
@@ -42,9 +52,25 @@ public class ClaimCard extends BasePage{
     private static final ViewInteraction claimCloseButton = onView(withId(R.id.close_image_button));
     private static final ViewInteraction claimStatusButton = onView(withId(R.id.status_processing_image_button));
     private static final ViewInteraction claimEditButton = onView(withId(R.id.edit_processing_image_button));
+    private static final ViewInteraction claimTextView = onView(
+            allOf(withId(R.id.title_text_view), withText("New My Claim"),
+                    withParent(withParent(IsInstanceOf.<View>instanceOf(androidx.cardview.widget.CardView.class))),
+                    isDisplayed()));
 
-    @Step("Проверка элементов в карточке(свернута)")
+    public static void shouldAddNewClaim(){
+        Allure.step("Проверка создания новой заявки");
+        claimThemeTitleFullCheck();
+        waitUntilElement(R.id.title_material_text_view);
+        claimThemeTitle.check(matches(isDisplayed()));
+        claimTextView.check(matches(isDisplayed()));
+        waitUntilElement("New My Claim");
+        claimTextView.perform(click());
+        claimDescriptionText.check(matches(isDisplayed()));
+        waitUntilElement("Test Claim");
+    }
+
     public static void cardShortCheck(){
+        Allure.step("Проверка элементов в карточке(свернута)");
         waitUntilElement(R.id.title_material_text_view);
         claimThemeTitle.check(matches(isDisplayed()));
         claimThemeDescription.check(matches(isDisplayed()));
@@ -59,13 +85,15 @@ public class ClaimCard extends BasePage{
         onView(withIndex(withId(R.id.executor_name_label_material_text_view), 0)).check(matches(withText("Исполнитель")));
         onView(withIndex(withId(R.id.plan_date_label_material_text_view), 0)).check(matches(withText("Плановая дата")));
     }
-    @Step("Проверка заголовка")
+
     public static void claimThemeTitleFullCheck(){
+        Allure.step("Проверка заголовка");
         waitUntilElement(R.id.title_label_text_view);
         existText(claimThemeTitleFull, "Тема");
     }
-    @Step("Проверка элементов в карточке(развернуто)")
+
     public static void cardFullCheck() {
+        Allure.step("Проверка элементов в карточке(развернуто)");
         claimThemeTitleFullCheck();
         existText(claimExecutorTitleFull, "Исполнитель");
         existText(claimDateTitleFull, "Плановая дата");
@@ -88,36 +116,44 @@ public class ClaimCard extends BasePage{
         claimStatusButtonCheck();
         claimEditButtonCheck();
     }
-    @Step("Тап по кнопке")
+
     public static void claimCommentAddButtonClick(){
+        Allure.step("Тап по кнопке");
         claimCommentAddButton.perform(click());
     }
-    @Step("Проверка кнопки")
+
     public static void claimCommentAddButtonCheck(){
+        Allure.step("Проверка кнопки");
         existClickable(claimCommentAddButton);
     }
-    @Step("Тап по кнопке")
+
     public static void claimCloseButtonClick(){
+        Allure.step("Тап по кнопке");
         claimCloseButton.perform(click());
     }
-    @Step("Проверка кнопки")
+
     public static void claimCloseButtonCheck(){
+        Allure.step("Проверка кнопки");
         existClickable(claimCloseButton);
     }
-    @Step("Тап по кнопке")
+
     public static void claimStatusButtonClick(){
+        Allure.step("Тап по кнопке");
         claimStatusButton.perform(click());
     }
-    @Step("Проверка кнопки")
+
     public static void claimStatusButtonCheck(){
+        Allure.step("Проверка кнопки");
         existClickable(claimStatusButton);
     }
-    @Step("Тап по кнопке")
+
     public static void claimEditButtonClick(){
+        Allure.step("Тап по кнопке");
         claimEditButton.perform(click());
     }
-    @Step("Проверка кнопки")
+
     public static void claimEditButtonCheck(){
+        Allure.step("Проверка кнопки");
         existClickable(claimEditButton);
     }
 }

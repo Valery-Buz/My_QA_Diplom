@@ -7,7 +7,9 @@ import static androidx.test.espresso.matcher.ViewMatchers.withId;
 
 import androidx.test.espresso.ViewInteraction;
 
+import io.qameta.allure.kotlin.Allure;
 import ru.iteco.fmhandroid.R;
+import ru.iteco.fmhandroid.ui.data.BasePage;
 
 public class SplashScreenPage extends BasePage {
     private static final ViewInteraction imageId = onView(withId(R.id.splashscreen_image_view));
@@ -15,6 +17,7 @@ public class SplashScreenPage extends BasePage {
     private static final ViewInteraction textViewId = onView(withId(R.id.splashscreen_text_view));
 
     public static void screenSplashCheK(){
+        Allure.step("Проверка заставки экрана");
         imageId.check(matches(isDisplayed()));
         progressBarId.check(matches(isDisplayed()));
         textViewId.check(matches(isDisplayed()));

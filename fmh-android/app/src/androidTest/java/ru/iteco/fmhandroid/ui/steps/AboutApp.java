@@ -6,8 +6,11 @@ import static androidx.test.espresso.matcher.ViewMatchers.withId;
 
 import androidx.test.espresso.ViewInteraction;
 
+import io.qameta.allure.kotlin.Allure;
 import io.qameta.allure.kotlin.Step;
 import ru.iteco.fmhandroid.R;
+import ru.iteco.fmhandroid.ui.data.BasePage;
+
 
 public class AboutApp extends BasePage {
     private static final String aboutAppText = "Версия:";
@@ -27,45 +30,55 @@ public class AboutApp extends BasePage {
     private static final ViewInteraction userAgreementLinkId = onView(withId(R.id.about_terms_of_use_value_text_view));
     private static final ViewInteraction companyId = onView(withId(R.id.about_company_info_label_text_view));
 
-    @Step("Кнопка Назад видна и кликабельна")
+
     public static void backButtonCheck(){
+        Allure.step("Кнопка Назад видна и кликабельна");
         existClickable(backButton);
     }
-    @Step("Клик по кнопке")
+
     public static void backButtonClick(){
+        Allure.step("Клик по кнопке");
         backButton.perform(click());
     }
-    @Step("Логотип присутствует")
+
     public static void logoCheck(){
+        Allure.step("Логотип присутствует");
         existNotClickable(logoView);
     }
-    @Step("Версия приложения заголовок присутствует")
+
     public static void versionTitleIdCheck(){
+        Allure.step("Версия приложения заголовок присутствует");
         waitUntilElement(R.id.about_version_title_text_view);
         existText(versionTitleId, aboutAppText);
     }
-    @Step("Присутствует текст версии")
+
     public static void versionTextIdCheck(){
+        Allure.step("Присутствует текст версии");
         existText(versionTextId, aboutAppVersion);
     }
-    @Step("Присутствует ссылка Политика конфиденциальности")
+
     public static void policyLinkIdCheck(){
+        Allure.step("Присутствует ссылка Политика конфиденциальности");
         existText(policyLinkId, policyLink);
     }
-    @Step("Присутствует текст ссылки Политика конфиденциальности")
+
     public static void policyTextIdCheck(){
+        Allure.step("Присутствует текст ссылки Политика конфиденциальности");
         existText(policyTextId, policyText);
     }
-    @Step("Присутствует текст ссылки Пользовательское соглашение")
+
     public static void userAgreementTextIdCheck(){
+        Allure.step("Присутствует текст ссылки Пользовательское соглашение");
         existText(userAgreementTextId, userAgreementText);
     }
-    @Step("Присутствует ссылка Пользовательское соглашение")
+
     public static void userAgreementLinkIdCheck(){
+        Allure.step("Присутствует ссылка Пользовательское соглашение");
         existText(userAgreementLinkId, userAgreementLink);
     }
-    @Step("Присутствует текст О компании")
+
     public static void companyIdCheck(){
+        Allure.step("Присутствует текст О компании");
         existText(companyId, companyInfo);
     }
 }

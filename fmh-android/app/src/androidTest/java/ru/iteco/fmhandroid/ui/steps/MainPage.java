@@ -18,11 +18,12 @@ import androidx.test.espresso.ViewInteraction;
 
 import org.hamcrest.core.IsInstanceOf;
 
+import io.qameta.allure.kotlin.Allure;
 import io.qameta.allure.kotlin.Step;
 import ru.iteco.fmhandroid.R;
+import ru.iteco.fmhandroid.ui.data.BasePage;
 
 public class MainPage extends BasePage {
-
     private static final ViewInteraction containerNewsHeader = onView( //общий блок новостей на главной странице (из 3х элементов) под кнопкой ВСЕ НОВОСТИ
             allOf(withId(R.id.all_news_cards_block_constraint_layout),
                     withParent(allOf(withId(R.id.container_list_news_include_on_fragment_main),
@@ -33,7 +34,6 @@ public class MainPage extends BasePage {
     private static final ViewInteraction newsHeaderTitle = onView(withText("Новости"));
     private static final ViewInteraction newsCollapseButton = onView(withIndex(withId(R.id.expand_material_button), 0));
     private static final ViewInteraction newsAllNewsButton = onView(withId(R.id.all_news_text_view));
-
 
     private static final ViewInteraction claimBlockHeader = onView(
             allOf(withText("Заявки"),
@@ -50,120 +50,118 @@ public class MainPage extends BasePage {
         )));
     }
 
-    @Step("Ожидание загрузки страницы")
     public static void waitLoadMainPage() {
+        Allure.step("Ожидание загрузки страницы");
         waitUntilElement(R.id.news_item_material_card_view);
     }
 
-    @Step("Проверка отображения блока")
     public static void newsContainerOneClickableCheck() {
+        Allure.step("Проверка отображения блока");
         exist(newsContainerOneClickable);
     }
 
-    @Step("Проверка отображения блока")
     public static void containerNewsHeaderCheck() {
+        Allure.step("Проверка отображения блока");
         exist(containerNewsHeader);
     }
 
-    @Step("Тап по блоку, появляется блок Описание")
     public static void containerNewsHeaderClick() {
+        Allure.step("Тап по блоку, появляется блок Описание");
         containerNewsHeader.perform(click());
         onView(withIndex(withId(R.id.news_item_description_text_view), 1)).check(matches(isDisplayed()));
     }
 
-    @Step("Проверка отображения кнопки")
     public static void claimAddNewButtonCheck() {
+        Allure.step("Проверка отображения кнопки");
         exist(claimAddNewButton);
     }
 
-    @Step("Тап по кнопке")
     public static void claimAddNewButtonClick() {
+        Allure.step("Тап по кнопке");
         claimAddNewButton.perform(click());
         waitUntilElement("Заявки");
     }
 
-    @Step("Проверка отображения кнопки")
     public static void claimExpandButtonCheck() {
+        Allure.step("Проверка отображения кнопки");
         exist(claimExpandButton);
     }
 
-    @Step("Тап по кнопке")
     public static void claimExpandButtonClick() {
+        Allure.step("Тап по кнопке");
         claimExpandButton.perform(click());
     }
 
-    @Step("Проверка отображения кнопки")
     public static void claimShowAllButtonCheck() {
+        Allure.step("Проверка отображения кнопки");
         exist(claimShowAllButton);
     }
 
-    @Step("Тап по кнопке")
     public static void claimShowAllButtonClick() {
+        Allure.step("Тап по кнопке");
         claimShowAllButton.perform(click());
     }
 
-    @Step("Проверка отображения заголовка Заявки")
     public static void claimBlockHeaderCheck() {
+        Allure.step("Проверка отображения заголовка Заявки");
         waitUntilElement("Заявки");
         existText(claimBlockHeader, "Заявки");
     }
 
-    @Step("Свайп вверх на объекте")
     public static void claimShowAllButtonSwipe() {
+        Allure.step("Свайп вверх на объекте");
         claimShowAllButton.perform(customSwipeUp());
     }
 
-    @Step("Свайп вверх на объекте")
     public static void claimBlockHeaderSwipe() {
+        Allure.step("Свайп вверх на объекте");
         claimBlockHeader.perform(customSwipeUp());
     }
 
-    @Step("Проверка отображения заголовка Новости")
     public static void newsHeaderTitleCheck() {
+        Allure.step("Проверка отображения заголовка Новости");
         waitUntilElement("Новости");
         existText(newsHeaderTitle, "Новости");
     }
 
-    @Step("Проверка отображения кнопки")
     public static void newsCollapseButtonCheck() {
+        Allure.step("Проверка отображения кнопки");
         exist(newsCollapseButton);
     }
 
-    @Step("Тап по кнопке")
     public static void newsCollapseButtonClick() {
+        Allure.step("Тап по кнопке");
         newsCollapseButton.perform(click());
     }
 
-    @Step("Проверка отображения кнопки")
     public static void newsAllNewsButtonCheck() {
+        Allure.step("Проверка отображения кнопки");
         existClickableText(newsAllNewsButton, "ВСЕ НОВОСТИ");
     }
 
-    @Step("Проверка отсутствия отображения кнопки")
     public static void newsAllNewsButtonNotCheck() {
+        Allure.step("Проверка отсутствия отображения кнопки");
         newsAllNewsButton.check(matches(not(isDisplayed())));
     }
 
-    @Step("Тап по кнопке")
     public static void newsAllNewsButtonClick() {
+        Allure.step("Тап по кнопке");
         newsAllNewsButton.perform(click());
     }
 
-    @Step("Проверка карточки новостей")
     public static void newsOneClickable() {
+        Allure.step("Проверка карточки новостей");
         onView(withIndex(withId(R.id.news_item_material_card_view), 1)).check(matches(isClickable()));
     }
 
-    @Step("Проверка что контейнер свернут")
     public static void newsContainerOneIsHidden() {
+        Allure.step("Проверка что контейнер свернут");
         onView(withIndex(withId(R.id.expand_material_button), 0)).perform(click());
-//        newsHeaderTitle.perform(click());
         onView(withIndex(withId(R.id.news_item_material_card_view), 0)).check(matches(not(isDisplayed())));
     }
 
-    @Step("Проверка что контейнер разворачивается")
     public static void newsContainerClick() {
+        Allure.step("Проверка что контейнер разворачивается");
         onView(withIndex(withId(R.id.expand_material_button), 0)).perform(click());
-//        newsHeaderTitle.perform(click());
     }
 }

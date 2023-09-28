@@ -1,4 +1,4 @@
-package ru.iteco.fmhandroid.ui.steps;
+package ru.iteco.fmhandroid.ui.data;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.pressBack;
@@ -45,6 +45,7 @@ import java.util.concurrent.TimeoutException;
 
 import io.qameta.allure.android.rules.ScreenshotRule;
 import ru.iteco.fmhandroid.ui.AppActivity;
+import ru.iteco.fmhandroid.ui.data.BeforeRunTest;
 
 
 public class BasePage {

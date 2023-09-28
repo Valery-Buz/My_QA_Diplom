@@ -14,8 +14,9 @@ import static org.hamcrest.Matchers.allOf;
 
 import androidx.test.espresso.ViewInteraction;
 
-import io.qameta.allure.kotlin.Step;
-import ru.iteco.fmhandroid.ui.BeforeRunTest;
+import io.qameta.allure.kotlin.Allure;
+import ru.iteco.fmhandroid.ui.data.BasePage;
+import ru.iteco.fmhandroid.ui.data.BeforeRunTest;
 import ru.iteco.fmhandroid.R;
 
 public class Login extends BasePage {
@@ -27,55 +28,63 @@ public class Login extends BasePage {
     private static final ViewInteraction titleTextElement = onView(withText("Авторизация"));
 
 
-    @Step("Кнопка видна и кликабельна, текст соответстует")
     public static void titleTextElementCheck() {
+        Allure.step("Кнопка видна и кликабельна, текст соответстует");
         waitUntilElement(R.id.login_text_input_layout);
         existNotClickableText(titleTextElement, "Авторизация");
     }
 
-    @Step("Тап по полю Логин")
+
     public static void loginFieldAsTextFieldClick() {
+        Allure.step("Тап по полю Логин");
         loginFieldAsTextField.perform(click());
     }
 
-    @Step("Тап по полю Пароль")
+
     public static void passwordFieldAsTextFieldClick() {
+        Allure.step("Тап по полю Пароль");
         passwordFieldAsTextField.perform(click());
     }
 
-    @Step("Очистить поле Логин")
+
     public static void loginFieldAsTextFieldClear() {
+        Allure.step("Очистить поле Логин");
         loginFieldAsTextField.perform(clearText());
         pauseSSt();
     }
 
-    @Step("Очистить поле Пароль")
+
     public static void passwordFieldAsTextFieldClear() {
+        Allure.step("Очистить поле Пароль");
         passwordFieldAsTextField.perform(clearText());
         pauseSSt();
     }
 
-    @Step("Тап по кнопке Авторизация")
+
     public static void loginButtonClick() {
+        Allure.step("Тап по кнопке Авторизация");
         waitUntilElement("Войти");
         loginButton.perform(click());
     }
 
-    @Step("Ввести текст в поле Логин")
+
     public static void loginFieldAsTextFieldType(String text) {
+        Allure.step("Ввести текст в поле Логин");
         waitUntilElement(R.id.login_text_input_layout);
         typeT(loginFieldAsTextField, text);
     }
 
-    @Step("Ввести текст в поле Пароль")
+
     public static void passwordFieldAsTextFieldType(String text) {
+        Allure.step("Ввести текст в поле Пароль");
         waitUntilElement(R.id.password_text_input_layout);
         typeT(passwordFieldAsTextField, text);
         passwordFieldAsTextField.perform(closeSoftKeyboard());
     }
 
-    @Step("На странице Авторизации представлены необходимые элементы")
+
     public static void fieldsCheck() {
+        Allure.step("На странице Авторизации представлены необходимые элементы");
         waitUntilElement("Авторизация");
         Login.titleTextElement.check(matches(isDisplayed()));
         Login.titleTextElement.check(matches(withText("Авторизация")));
@@ -89,14 +98,16 @@ public class Login extends BasePage {
         Login.loginButton.check(matches((withText("Войти"))));
     }
 
-    @Step("Проверка ошибки поля не могут быть пустые")
+
     public static void errorEmptyFieldsCheck() {
+        Allure.step("Проверка ошибки поля не могут быть пустые");
         onView(withText(R.string.empty_login_or_password)).inRoot(new ToastMatcher())
                 .check(matches(withText("Логин и пароль не могут быть пустыми")));
     }
 
-    @Step("Проверка ошибки поля не могут быть пустые")
+
     public static void errorWrongLoginOrPassword() {
+        Allure.step("Проверка ошибки поля не могут быть пустые");
         onView(withText(R.string.wrong_login_or_password)).inRoot(new BeforeRunTest.ToastMatcher())
                 .check(matches(withText("Неверный логин или пароль")));
     }

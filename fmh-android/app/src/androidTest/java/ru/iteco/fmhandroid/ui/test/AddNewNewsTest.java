@@ -5,9 +5,11 @@ import org.junit.Test;
 
 import io.qameta.allure.kotlin.Description;
 import io.qameta.allure.kotlin.Story;
-import ru.iteco.fmhandroid.ui.BeforeRunTest;
+import ru.iteco.fmhandroid.ui.data.BeforeRunTest;
 import ru.iteco.fmhandroid.ui.steps.AddNewNews;
 import ru.iteco.fmhandroid.ui.steps.HeaderPage;
+import ru.iteco.fmhandroid.ui.steps.LkMenu;
+import ru.iteco.fmhandroid.ui.steps.Login;
 import ru.iteco.fmhandroid.ui.steps.MainMenu;
 import ru.iteco.fmhandroid.ui.steps.News;
 
@@ -29,7 +31,6 @@ public class AddNewNewsTest extends BeforeRunTest {
     @Story("Проверка Страницы Создание Новости")
     @Test
     public void shouldBeAddedNewNews() {
-
         AddNewNews.categoryFieldClick();
         AddNewNews.setCategoryFieldClick();
         AddNewNews.dateFieldClick();
@@ -40,6 +41,8 @@ public class AddNewNewsTest extends BeforeRunTest {
         AddNewNews.descriptionFieldType("This my clever news");
         AddNewNews.descriptionFieldHide();
         AddNewNews.saveButtonClick();
+        News.shouldBeVisibleDescriptionText();
+        clickBack();
     }
 
     @Description("Страница содержит заголовок Создание Новости")

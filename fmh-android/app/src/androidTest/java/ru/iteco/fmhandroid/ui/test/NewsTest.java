@@ -6,7 +6,7 @@ import org.junit.Test;
 import io.qameta.allure.kotlin.Description;
 import io.qameta.allure.kotlin.Story;
 import io.qameta.allure.kotlin.junit4.DisplayName;
-import ru.iteco.fmhandroid.ui.BeforeRunTest;
+import ru.iteco.fmhandroid.ui.data.BeforeRunTest;
 import ru.iteco.fmhandroid.ui.steps.AddNewNews;
 import ru.iteco.fmhandroid.ui.steps.HeaderPage;
 import ru.iteco.fmhandroid.ui.steps.MainMenu;

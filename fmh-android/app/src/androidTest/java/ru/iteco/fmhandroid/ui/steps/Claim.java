@@ -7,8 +7,10 @@ import static androidx.test.espresso.matcher.ViewMatchers.withText;
 
 import androidx.test.espresso.ViewInteraction;
 
+import io.qameta.allure.kotlin.Allure;
 import io.qameta.allure.kotlin.Step;
 import ru.iteco.fmhandroid.R;
+import ru.iteco.fmhandroid.ui.data.BasePage;
 
 public class Claim extends BasePage {
     private static final ViewInteraction titleClaimHeader = onView(withText("Заявки"));
@@ -25,37 +27,45 @@ public class Claim extends BasePage {
     private static final ViewInteraction filterOkButton = onView(withId(R.id.claim_list_filter_ok_material_button));
     private static final ViewInteraction filterCancelButton = onView(withId(R.id.claim_filter_cancel_material_button));
 
-    @Step
+
     public static void titleClaimHeaderCheck(){
+        Allure.step("Проверка заголовка Заявки");
         waitUntilElement("Заявки");
         existText(titleClaimHeader,"Заявки");
     }
-    @Step("Тап по кнопке filter")
+
     public static void filterButtonClick(){
+        Allure.step("Тап по кнопке filter");
         filterButton.perform(click());
     }
-    @Step("Проверка кнопки filter")
+
     public static void filterButtonCheck(){
+        Allure.step("Проверка кнопки filter");
         existClickable(filterButton);
     }
-    @Step("Тап по кнопке +")
+
     public static void addNewClaimButtonClick(){
+        Allure.step("Тап по кнопке +");
         addNewClaimButton.perform(click());
     }
-    @Step("Проверка кнопки +")
+
     public static void addNewClaimButtonCheck(){
+        Allure.step("Проверка кнопки +");
         existClickable(addNewClaimButton);
     }
-    @Step("Проверка окна фильтра")
+
     public static void filterViewCheck(){
+        Allure.step("Проверка окна фильтра");
         exist(filterView);
     }
-    @Step("Проверка текста Заголовка")
+
     public static void filterTitleCheck(){
+        Allure.step("Проверка текста Заголовка");
         existText(filterTitle,"Фильтрация");
     }
-    @Step("Проверка элементов в фильтре")
+
     public static void filterCheck() {
+        Allure.step("Проверка элементов в фильтре");
         waitUntilElement(R.id.item_filter_open);
         existClickableText(statusOpen, "Открыта");
         existClickableText(statusInProgress, "В работе");
@@ -64,16 +74,19 @@ public class Claim extends BasePage {
         existClickableText(filterOkButton, "ОК");
         existClickableText(filterCancelButton, "Отмена");
     }
-    @Step("Тап по кнопке OK")
+
     public static void filterOkButtonClick(){
+        Allure.step("Тап по кнопке OK");
         filterOkButton.perform(click());
     }
-    @Step("Тап по кнопке Cancel")
+
     public static void editButtonClick(){
+        Allure.step("Тап по кнопке Cancel");
         filterCancelButton.perform(click());
     }
-    @Step("Открываем заявку без комментариев (в данной реализации наугад 3ю карточку)")
+
     public static void openCardWithoutComment(){
+        Allure.step("Открываем заявку без комментариев (в данной реализации наугад 3ю карточку)");
         Claim.filterButton.perform(click());
         onView(withText("Открыта")).perform(click());
         onView(withText("В работе")).perform(click());
@@ -82,8 +95,9 @@ public class Claim extends BasePage {
         waitUntilElement(R.id.claim_list_card);
         onView(withIndex(withId(R.id.claim_list_card), 2)).perform(click());
     }
-    @Step("swipe up cards")
+
     public static void claimsSwipeUp(){
+        Allure.step("swipe up cards");
         onView(withIndex(withId(R.id.plan_date_label_material_text_view), 2)).perform(customSwipeUp());
         pauseSSt();
         onView(withIndex(withId(R.id.plan_date_label_material_text_view), 2)).perform(customSwipeUp());
@@ -91,8 +105,9 @@ public class Claim extends BasePage {
         onView(withIndex(withId(R.id.plan_date_label_material_text_view), 2)).perform(customSwipeUp());
         pauseSSt();
     }
-    @Step("Тап по заявке")
+
     public static void claimTap(){
+        Allure.step("Тап по заявке");
         onView(withIndex(withId(R.id.claim_list_card), 0)).perform(click());
     }
 }

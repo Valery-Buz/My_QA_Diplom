@@ -17,6 +17,7 @@ import androidx.test.espresso.ViewInteraction;
 
 import io.qameta.allure.kotlin.Step;
 import ru.iteco.fmhandroid.R;
+import ru.iteco.fmhandroid.ui.data.BasePage;
 
 public class AddNewNews extends BasePage {
     private static final ViewInteraction titleHeader = onView(withId(R.id.custom_app_bar_title_text_view));

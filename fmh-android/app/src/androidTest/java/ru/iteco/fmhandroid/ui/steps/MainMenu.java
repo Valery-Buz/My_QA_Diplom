@@ -9,7 +9,9 @@ import static androidx.test.espresso.matcher.ViewMatchers.withText;
 
 import androidx.test.espresso.ViewInteraction;
 
+import io.qameta.allure.kotlin.Allure;
 import io.qameta.allure.kotlin.Step;
+import ru.iteco.fmhandroid.ui.data.BasePage;
 
 public class MainMenu extends BasePage {
 
@@ -23,67 +25,68 @@ public class MainMenu extends BasePage {
     private static final ViewInteraction aboutPageButton = onView(withText("О приложении")).inRoot(isPopupWindow());
 
 
-    @Step("Кнопка видна и кликабельна, текст совпадает")
+
     public static void mainPageButtonCheck() {
+        Allure.step("Кнопка Главная страница видна и кликабельна, текст совпадает");
         existText(mainPageButton, mainPageTextRu);
     }
 
-    @Step("Кнопка видна и кликабельна, текст совпадает")
     public static void claimPageButtonCheck() {
+        Allure.step("Кнопка видна и кликабельна, текст совпадает");
         existText(claimPageButton, claimPageTextRu);
     }
 
-    @Step("Кнопка видна и кликабельна, текст совпадает")
     public static void newsPageButtonCheck() {
+        Allure.step("Кнопка Новости видна и кликабельна, текст совпадает");
         existText(newsPageButton, NewsPageTextRu);
     }
 
-    @Step("Кнопка видна и кликабельна, текст совпадает")
     public static void aboutPageButtonCheck() {
+        Allure.step("Кнопка О приложении видна и кликабельна, текст совпадает");
         existText(aboutPageButton, aboutPageTextRu);
     }
 
-    @Step("Кнопка видна и некликабельна, текст совпадает")
     public static void mainPageButtonNotClickCheck() {
+        Allure.step("Кнопка видна и некликабельна, текст совпадает");
         existNotClickableText(mainPageButton, mainPageTextRu);
     }
 
-    @Step("Кнопка видна и некликабельна, текст совпадает")
     public static void claimPageButtonNotClickCheck() {
+        Allure.step("Кнопка видна и некликабельна, текст совпадает");
         existNotClickableText(claimPageButton, claimPageTextRu);
     }
 
-    @Step("Кнопка видна и некликабельна, текст совпадает")
     public static void newsPageButtonNotClickCheck() {
+        Allure.step("Кнопка видна и некликабельна, текст совпадает");
         existNotClickableText(newsPageButton, NewsPageTextRu);
     }
 
-    @Step("Тап по кнопке")
     public static void mainPageButtonClick() {
+        Allure.step("Тап по кнопке");
         mainPageButton.perform(click());
         pauseShort();
     }
 
-    @Step("Тап по кнопке")
     public static void claimPageButtonClick() {
+        Allure.step("Тап по кнопке");
         claimPageButton.perform(click());
         pauseShort();
     }
 
-    @Step("Тап по кнопке")
     public static void newsPageButtonClick() {
+        Allure.step("Тап по кнопке");
         newsPageButton.perform(click());
         pauseShort();
     }
 
-    @Step("Тап по кнопке")
     public static void aboutPageButtonClick() {
+        Allure.step("Тап по кнопке");
         aboutPageButton.perform(click());
         pauseShort();
     }
 
-    @Step("Проверка содержимого меню")
     public static void menuConsist() {
+        Allure.step("Проверка содержимого меню");
         mainPageButton.check(matches(isDisplayed()));
         mainPageButton.check(matches(withText(MainMenu.mainPageTextRu)));
         newsPageButton.check(matches(isDisplayed()));

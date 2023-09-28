@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import io.qameta.allure.kotlin.Description;
 import io.qameta.allure.kotlin.Story;
-import ru.iteco.fmhandroid.ui.BeforeRunTest;
+import ru.iteco.fmhandroid.ui.data.BeforeRunTest;
 import ru.iteco.fmhandroid.ui.steps.AboutApp;
 import ru.iteco.fmhandroid.ui.steps.Claim;
 import ru.iteco.fmhandroid.ui.steps.HeaderPage;
