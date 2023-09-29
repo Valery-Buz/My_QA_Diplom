@@ -55,6 +55,30 @@ public class BasePage {
     public ActivityScenarioRule<AppActivity> mActivityScenarioRule =
             new ActivityScenarioRule<>(AppActivity.class);
 
+    public static class AuthInfo {
+        private final String login;
+        private final String password;
+
+        public AuthInfo(String login, String pass) {
+            this.login = login;
+            this.password = pass;
+        }
+
+        public String getLogin() {
+            return login;
+        }
+
+        public String getPass() {
+            return password;
+        }
+    }
+
+    public static AuthInfo authInfo() {
+        String login = "login2";
+        String pass = "password2";
+        return new AuthInfo(login, pass);
+    }
+
     private static final long waitTimeout = 6500;
 
     public static void waitUntilElement(final int viewId) {

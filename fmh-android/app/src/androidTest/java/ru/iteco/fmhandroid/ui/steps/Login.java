@@ -4,6 +4,7 @@ import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.clearText;
 import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.action.ViewActions.closeSoftKeyboard;
+import static androidx.test.espresso.action.ViewActions.replaceText;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDescendantOfA;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
@@ -65,6 +66,13 @@ public class Login extends BasePage {
         Allure.step("Тап по кнопке Авторизация");
         waitUntilElement("Войти");
         loginButton.perform(click());
+    }
+
+    public static void loginWithValidData(BasePage.AuthInfo info) {
+        Allure.step("Авторизация с валидными данными");
+        waitUntilElement(R.id.login_text_input_layout);
+        loginFieldAsTextField.perform(replaceText(info.getLogin()));
+        passwordFieldAsTextField.perform(replaceText(info.getPass()));
     }
 
 

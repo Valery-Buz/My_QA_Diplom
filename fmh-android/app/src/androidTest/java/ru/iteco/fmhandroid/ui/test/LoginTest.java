@@ -106,5 +106,14 @@ public class LoginTest extends BasePage {
         waitUntilKeyboardHide();
         Login.loginButtonClick();
     }
+    @Description("При вводе валидных логин пароль входит в приложение")
+    @Story("Проверка страницы Авторизации")
+    @Test
+    public void ShouldLoginWithValidData() {
+        Login.titleTextElementCheck();
+        Login.loginWithValidData(authInfo());
+        Login.loginButtonClick();
+    }
+
 
 }
